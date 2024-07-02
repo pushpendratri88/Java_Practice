@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
     Java8StreamUtilities java8StreamUtilities = new Java8StreamUtilities();
     ArrayUtilities arrayUtilities =  new ArrayUtilities();
+    MathsUtillities mathsUtillities = new MathsUtillities();
 
 //        java8StreamUtilities.findNoStartWith1();
 //        java8StreamUtilities.findEvenNo();
@@ -16,6 +17,8 @@ public class Main {
 //        java8StreamUtilities.DescSortInt();
 //        arrayUtilities.objectArray("pushpendra", "Nandita", "akshatam");
 //        arrayUtilities.access2DArray();
-        arrayUtilities.setValueFor2DArray();
+//        arrayUtilities.setValueFor2DArray();
+        mathsUtillities.FibonacciExample1();
+
     }
 }

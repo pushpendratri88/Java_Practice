@@ -53,8 +53,9 @@ public class ArrayUtilities {
                 System.out.print(intColumn + " ");
             }
             System.out.println();
-
         }
     }
+
+
 
 }
