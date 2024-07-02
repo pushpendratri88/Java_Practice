@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Utilities {
+public class Java8StreamUtilities {
 
     public void findNoStartWith1(){
         int[] intArray = new int[] {1,3,5,5,7,7,7,9,11,11,15,15,17,17,17,19,21,21,21,21};
