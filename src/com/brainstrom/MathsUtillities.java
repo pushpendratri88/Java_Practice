@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class MathsUtillities {
 
-    public boolean isPalindrome(String str){
+    public void isPalindrome(String str){
         StringBuilder sb=new StringBuilder(str);
         sb.reverse();
         String rev=sb.toString();
         if(str.equals(rev)){
-            return true;
+            System.out.println("Palindrome");
         }else{
-            return false;
+            System.out.println("Not Palindrome");
         }
     }
 
@@ -90,12 +90,15 @@ public class MathsUtillities {
         int x = sc.nextInt();
         int y = sc.nextInt();
         System.out.println("before swapping numbers: "+x +" "+ y);
-        /*Swapping*/
-        x=1;
-        y=2;
-        x = x + y;
-        y = x - y;
-        x = x - y;
+        /*Swapping One Way*/
+//        x=x+y;
+//        y=x-y;
+//        x=x-y;
+
+        /*Swapping Other Way*/
+        int temp = x;
+        x=y;
+        y=temp;
         System.out.println("After swapping: "+x +"  " + y);
     }
 
