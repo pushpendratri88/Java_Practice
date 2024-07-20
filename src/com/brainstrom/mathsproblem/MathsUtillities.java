@@ -1,4 +1,4 @@
-package com.brainstrom;
+package com.brainstrom.mathsproblem;
 
 import java.util.Scanner;
 

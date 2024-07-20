@@ -1,4 +1,4 @@
-package com.brainstrom.functionalInterface;
+package com.brainstrom.Java8.functionalInterface;
 
 import com.brainstrom.data.Student;
 import com.brainstrom.data.StudentDataBase;

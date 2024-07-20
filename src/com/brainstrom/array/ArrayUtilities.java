@@ -1,10 +1,12 @@
-package com.brainstrom;
+package com.brainstrom.array;
+
+import com.brainstrom.data.Student;
 
 public class ArrayUtilities {
     public void objectArray(String name1, String name2, String name3){
     Student[] studentArray = new Student[]{new Student("pushpendra"), new Student("nandita"), new Student("akshatam")};
    for (Student stu : studentArray){
-       System.out.println(stu.name);
+       System.out.println(stu.getName());
    }
 
         System.out.println("############################################");
@@ -16,7 +18,7 @@ public class ArrayUtilities {
 
 
         for (Student stu : students){
-            System.out.println(stu.name);
+            System.out.println(stu.getName());
         }
     }
 

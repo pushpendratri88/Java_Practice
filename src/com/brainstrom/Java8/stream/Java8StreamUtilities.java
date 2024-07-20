@@ -1,4 +1,4 @@
-package com.brainstrom;
+package com.brainstrom.Java8.stream;
 
 
 import java.util.*;
