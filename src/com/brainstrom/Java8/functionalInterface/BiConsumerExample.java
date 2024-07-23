@@ -1,3 +1,5 @@
+//Two Inputs and No Output: The BiConsumer interface has a single abstract method, accept, which takes two arguments and returns nothing (void):
+
 package com.brainstrom.Java8.functionalInterface;
 
 import java.util.function.BiConsumer;

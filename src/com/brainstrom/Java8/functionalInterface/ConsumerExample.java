@@ -1,10 +1,11 @@
 package com.brainstrom.Java8.functionalInterface;
+//The primary objective of using a Consumer is to represent an operation that accepts a single input argument and returns no result.
+//It is typically used for performing operations on a given input, such as printing, updating, or any other action that does not require returning a result.
 
 import com.brainstrom.data.Student;
 import com.brainstrom.data.StudentDataBase;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 public class ConsumerExample {
     static Consumer<Student> c1 = p -> System.out.println(p);
