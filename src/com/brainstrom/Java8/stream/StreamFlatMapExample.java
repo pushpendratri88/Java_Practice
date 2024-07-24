@@ -20,8 +20,8 @@ public class StreamFlatMapExample {
 
     private static List<String> printUniqueSortedStudentActivities(List<Student> students) {
        return students.stream()                     // This statements returns Stream<Student>
-                .map(Student :: getActivities)      // This statements returns Stream<List<String>>
-                .flatMap(List :: stream)            // This statements returns Stream<String> in a single stream
+                .map(Student :: getActivities)      // This statements will collect activities with respect to Student object and returns Stream<List<String>>
+                .flatMap(List :: stream)            // This statements will collect all student activities in a single stream (Stream<String>)
                 .distinct()                         // returns the unique values form the single stream (Just above)
                 .sorted()                           // This will sort the above stream
                 .collect(Collectors.toList());      // Thi will convert the stream to List type

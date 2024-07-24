@@ -1,4 +1,4 @@
-package com.brainstrom.Java8.stream.Interview;
+package com.brainstrom.interview.java8.stream;
 
 import java.util.Arrays;
 import java.util.function.IntConsumer;
