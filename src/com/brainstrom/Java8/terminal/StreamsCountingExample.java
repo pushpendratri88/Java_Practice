@@ -1,4 +1,4 @@
-package com.brainstrom.Java8.stream.terminal;
+package com.brainstrom.Java8.terminal;
 
 import com.brainstrom.data.StudentDataBase;
 

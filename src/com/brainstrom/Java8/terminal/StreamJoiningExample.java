@@ -1,5 +1,5 @@
 // joining can be used to join content in collect method
-package com.brainstrom.Java8.stream.terminal;
+package com.brainstrom.Java8.terminal;
 
 import com.brainstrom.data.Student;
 import com.brainstrom.data.StudentDataBase;

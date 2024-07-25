@@ -1,7 +1,6 @@
-package com.brainstrom.Java8.stream.numericstream;
+package com.brainstrom.Java8.numericstream;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
