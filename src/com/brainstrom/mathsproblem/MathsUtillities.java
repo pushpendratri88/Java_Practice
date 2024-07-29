@@ -101,6 +101,4 @@ public class MathsUtillities {
         y=temp;
         System.out.println("After swapping: "+x +"  " + y);
     }
-
-
 }

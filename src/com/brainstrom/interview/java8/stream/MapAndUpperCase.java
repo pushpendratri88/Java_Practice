@@ -6,6 +6,9 @@ import java.util.List;
 public class MapAndUpperCase {
     public static void main(String[] args) {
         List<String> stringList = Arrays.asList("pushpendra","tripathi","nandita");
-        stringList.stream().map(String ::toUpperCase).forEach(upper -> System.out.println(upper));
+        stringList
+                .stream()
+                .map(String ::toUpperCase)
+                .forEach(upper -> System.out.println(upper));
     }
 }
