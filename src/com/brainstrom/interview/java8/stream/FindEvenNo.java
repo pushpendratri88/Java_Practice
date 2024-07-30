@@ -9,6 +9,7 @@ public class FindEvenNo {
         int[] intArray = new int[] {10,15,8,49,25,98,32};
         Arrays
                 .stream(intArray)
-                .filter(evenCheck -> evenCheck%2 == 0).forEach(intCustomer);
+                .filter(evenCheck -> evenCheck % 2 == 0)
+                .forEach(intCustomer);
     }
 }
