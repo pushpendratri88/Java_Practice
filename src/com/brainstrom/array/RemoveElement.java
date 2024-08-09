@@ -40,7 +40,7 @@
 //Note that the five elements can be returned in any order.
 //It does not matter what you leave beyond the returned k (hence they are underscores).
 
-package com.brainstrom.interview.array;
+package com.brainstrom.array;
 
 public class RemoveElement {
     public static void main(String[] args) {

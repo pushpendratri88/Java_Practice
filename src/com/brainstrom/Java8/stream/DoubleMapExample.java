@@ -1,4 +1,4 @@
-package com.brainstrom.interview.java8.stream;
+package com.brainstrom.Java8.stream;
 
 import com.brainstrom.data.Bike;
 import com.brainstrom.data.Student;

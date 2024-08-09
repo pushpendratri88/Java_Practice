@@ -1,4 +1,4 @@
-package com.brainstrom.interview.java8.stream;
+package com.brainstrom.Java8.stream;
 
 import java.util.Arrays;
 import java.util.Comparator;

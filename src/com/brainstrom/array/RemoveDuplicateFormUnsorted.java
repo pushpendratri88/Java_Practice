@@ -1,4 +1,4 @@
-package com.brainstrom.interview.array;
+package com.brainstrom.array;
 
 import java.util.Arrays;
 
