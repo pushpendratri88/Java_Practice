@@ -1,4 +1,4 @@
-package com.brainstrom.mathsproblem;
+package com.brainstrom.mathsProblem;
 
 public class FibonacciSeries {
     public static void main(String[] args) {

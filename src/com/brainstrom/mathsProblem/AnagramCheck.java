@@ -1,4 +1,4 @@
-package com.brainstrom.mathsproblem;
+package com.brainstrom.mathsProblem;
 
 import java.util.Arrays;
 

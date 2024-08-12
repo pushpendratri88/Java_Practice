@@ -1,4 +1,4 @@
-package com.brainstrom.designpattern;
+package com.brainstrom.designPattern;
 
 public class DesignPatternTest {
     public static void main(String[] args) {
