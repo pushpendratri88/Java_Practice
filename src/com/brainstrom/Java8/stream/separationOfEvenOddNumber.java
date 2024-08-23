@@ -14,7 +14,7 @@ public class separationOfEvenOddNumber {
                 .stream()
                 .collect(Collectors.partitioningBy(num -> num%2 ==0));
         System.out.println(evenAndOddSepration);
-    }
+    }        
 
     public static void separationOfEvenOddNumberInList(){
         List<Integer> oneToTen = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);

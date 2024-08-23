@@ -18,7 +18,7 @@ public class DoubleMapExample {
        return  StudentDataBase.getAllStudents()
                 .stream()
                 .map(Student :: getBikes)
-                .flatMap(List<Bike> :: stream)
+                .flatMap(List :: stream)
                 .map(Bike :: getModel)
                 .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
