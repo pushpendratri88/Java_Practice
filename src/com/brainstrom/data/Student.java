@@ -11,17 +11,10 @@ public class Student {
     private String gender;
     private int noteBooks;
     private Optional<Bike> bike;
-
-    public Optional<Bike> getBike() {
-        return bike;
-    }
-
-    public void setBike(Optional<Bike> bike) {
-        this.bike = bike;
-    }
+    private String department;
+    private  int rank;
 
     public Student(){
-
     }
 
     public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities) {
@@ -33,7 +26,7 @@ public class Student {
         this.activities = activities;
     }
 
-    public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities, List<Bike> bikes) {
+    public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities, List<Bike> bikes, String department,int rank) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
@@ -41,6 +34,8 @@ public class Student {
         this.noteBooks = noteBooks;
         this.activities = activities;
         this.bikes = bikes;
+        this.department = department;
+        this.rank = rank;
     }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
@@ -121,6 +116,30 @@ public class Student {
         System.out.println("List of Activities are : " + this.activities);
     }
 
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -130,6 +149,8 @@ public class Student {
                 ", gender='" + gender + '\'' +
                 ", noteBooks=" + noteBooks +
                 ", bike=" + bike +
+                ", department='" + department + '\'' +
+                ", rank=" + rank +
                 ", bikes=" + bikes +
                 ", activities=" + activities +
                 '}';

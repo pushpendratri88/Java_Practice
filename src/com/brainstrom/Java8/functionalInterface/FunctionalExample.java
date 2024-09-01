@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class FunctionalExample {
     static Consumer<String> consumer1 = name-> System.out.println(name.toUpperCase());
     static Consumer<String> consumer2 = number-> System.out.println(number);
-    static Function<String, String >  function1 = (name) -> name.toUpperCase();
+    static Function<String, String >  function1 = name -> name.toUpperCase();
     static Predicate<String> predicate1 = (predicate) -> predicate.length() >= 3;
     static Function<String, String >  function2 = (name) -> {
         String[] strArray = name.split("_");
