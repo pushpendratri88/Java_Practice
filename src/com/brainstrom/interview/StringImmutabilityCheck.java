@@ -6,7 +6,7 @@ public class StringImmutabilityCheck {
         String str1 = str;
         str = str +" world";
 
+        System.out.println(str.equals(str1));
         System.out.println(str);
-        System.out.println(str1);
     }
 }
