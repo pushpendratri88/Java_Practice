@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class FindDuplicateChar {
     public static void main(String[] args) {
-        String str = "pushpendra";
+        String str = "pushpendrakumartripathi";
         Set<String> uniqueSet = new HashSet<>();
         Set<String> set = Arrays.stream(str.split(""))
                 .filter(ch -> !uniqueSet.add(ch))
