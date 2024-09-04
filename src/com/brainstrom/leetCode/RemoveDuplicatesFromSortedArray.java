@@ -1,4 +1,4 @@
-package com.brainstrom.array;
+package com.brainstrom.leetCode;
 
 public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {

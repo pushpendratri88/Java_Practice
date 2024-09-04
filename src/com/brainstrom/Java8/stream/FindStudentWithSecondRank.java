@@ -8,7 +8,12 @@ import java.util.Optional;
 
 public class FindStudentWithSecondRank {
     public static void main(String[] args) {
-        Optional<Student> optionalStu = StudentDataBase.getAllStudents().stream().sorted(Comparator.comparingInt(Student::getRank).reversed()).skip(1  ).findFirst();
+        Optional<Student> optionalStu = StudentDataBase.getAllStudents()
+                .stream()
+                .sorted(Comparator.comparingInt(Student::getRank)
+                        .reversed())
+                .skip(1  )
+                .findFirst();
         optionalStu.ifPresent(student -> System.out.println(student));
     }
 }

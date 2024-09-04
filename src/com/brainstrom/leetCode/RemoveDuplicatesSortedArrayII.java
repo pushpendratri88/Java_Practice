@@ -1,4 +1,4 @@
-package com.brainstrom.array;
+package com.brainstrom.leetCode;
 
 
 public class RemoveDuplicatesSortedArrayII {
