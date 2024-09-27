@@ -11,7 +11,9 @@ import java.util.stream.Collectors;
 public class GroupedStudentByDepartment {
     static BiConsumer consumer = (k,v) -> System.out.println(k + ":" + v);
     public static void main(String[] args) {
-        Map<String, List<Student>>  map= StudentDataBase.getAllStudents().stream().collect(Collectors.groupingBy(Student::getDepartment));
+        Map<String, Long>  map= StudentDataBase.getAllStudents()
+                .stream()
+                .collect(Collectors.groupingBy(Student::getDepartment,Collectors.counting()));
         map.forEach(consumer);
     }
 }

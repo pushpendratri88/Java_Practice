@@ -1,19 +1,47 @@
+//Tech Mahindra
+//String[] inputArray = { "abcd", "java", "dcba", "ajav", "xyz", "epam", "pame", "aepm" };
+//
+//expected output
+//
+//
+//"epam", "pame", "aepm"
+//
+//        "abcd" "dcba"
+//
+//        "java" "ajav"
+
+
+
+
 package com.brainstrom.test;
 
 import java.util.Arrays;
 
 public class ArrayExample{
     public static void main(String[] args) {
-        String[] strArray  = new String[]{"A","B","C"};
-        String[] strArray1  = {"X","Y","Z"};
-        int[] intArray =  new int[]{1,2,3};
-        int[] intArray1 =  {11,12,13};
+        String[] inputArray = { "abcd", "java", "dcba", "ajav", "xyz", "epam", "pame", "aepm"};
+        findAnagram(inputArray);
 
-        System.out.println(Arrays.toString(strArray));
-        System.out.println(Arrays.toString(strArray1));
-        System.out.println(Arrays.toString(intArray));
-        System.out.println(Arrays.toString(intArray1));
+    }
+
+    private static void findAnagram(String[] inputArray) {
+        String[] resultArray = new String[]{};
+        for (int i= 0; i < inputArray.length; i++){
+            char[] stringChar = inputArray[i].toCharArray();
+            Arrays.sort(stringChar);
+            for (int j= i+1; j < inputArray.length; j++){
+                int charPosition = 0;
+                char[] stringChar1 = inputArray[i].toCharArray();
+                Arrays.sort(stringChar1);
+                    while(stringChar[charPosition] == stringChar1[charPosition]){
+                        if(charPosition < stringChar.length-1){
+                        System.out.println(stringChar1);
+                        charPosition++;
+                        }
+                    }
 
 
+            }
+        }
     }
 }

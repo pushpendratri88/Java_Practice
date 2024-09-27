@@ -10,8 +10,13 @@ import java.util.stream.Collectors;
 
 public class Test1 {
     public static void main(String[] args) {
-        BiConsumer biConsumer = (k,v) -> System.out.println(k +"::" + v);
-        Map<Character, List<String>> studentGroup = StudentDataBase.getAllStudents().stream().map(Student :: getName).collect(Collectors.groupingBy(name -> name.charAt(0)));
-        studentGroup.forEach(biConsumer);
+        double a, b,c;
+        a = 3.0/0;
+        b = 0/4.0;
+        c=0/0.0;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
