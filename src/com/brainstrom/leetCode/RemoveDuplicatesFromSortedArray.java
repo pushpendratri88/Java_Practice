@@ -1,35 +1,24 @@
+//Input: nums = [1,1,2]
+//Output: 2, nums = [1,2,_]
+//Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+//It does not matter what you leave beyond the returned k (hence they are underscores).
 package com.brainstrom.leetCode;
 
 public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
-        int[] array =  new int[] {0,0,1,1,1,2,2,3,3,4};
-        int length = array.length;
-        length = removeDuplicates(array, length);
-        // Print the unique elements
-        for (int i = 0; i < length; i++) {
-            System.out.print(array[i] + " ");
-        }
+        int[] intArray = {0,0,1,1,1,2,2,3,3,4};
+        System.out.println(removeDuplicates(intArray));
+
     }
 
-    private static int removeDuplicates(int[] array, int length) {
-        if (length == 0 || length == 1) {
-            return length;
-        }
-
-        // New index of the non-duplicate element
-        int j = 0;
-
-        // Traverse the array
-        for (int i = 0; i < length - 1; i++) {
-            if (array[i] != array[i + 1]) {
-                array[j++] = array[i];
+    private static int removeDuplicates(int[] nums) {
+        int count=0;
+        for(int i=0;i < nums.length-1;i++){
+            if(!(nums[i] ==nums[i+1])){
+                nums[count++] = nums[i];
             }
         }
-
-        // Store the last element as whether it is unique or repeated, it hasn't been stored previously
-        array[j++] = array[length - 1];
-
-        return j;
+        nums[count] = nums[nums.length-1];
+        return count+1;
     }
-
 }
