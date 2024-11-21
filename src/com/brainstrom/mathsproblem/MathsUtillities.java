@@ -1,13 +1,17 @@
 package com.brainstrom.mathsproblem;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class MathsUtillities {
     public static void main(String[] args) {
         MathsUtillities mathsUtillities = new MathsUtillities();
-        mathsUtillities.swap();
+        for(Object obj : mathsUtillities.findPrimeNumber()){
+            if(obj instanceof Integer num){
+                System.out.println(num);
+            }
+        }
+
+        System.out.println(mathsUtillities.findPrimeNumber());
     }
 
     public void isPalindrome(String str){
@@ -138,7 +142,44 @@ public class MathsUtillities {
 
             reverseString = ch + reverseString;
         }
-
         return reverseString;
+    }
+    public boolean isPrimeNumber(){
+        int input = 23;
+        int m = input/2;
+        int flag = 0;
+        if(input == 0 || input == 1){
+            return false;
+        }
+        for(int i=2; i <= m; i++){
+            if(input % i == 0){
+                flag = 1;
+                return false;
+            }
+        }
+        if(flag == 0){
+            return  true;
+        }
+        return false;
+    }
+
+    public Object[] findPrimeNumber(){
+        int number = 20;
+        int MAX_SIZE = 100;
+        int flag = 0;
+        List<Integer> primeNumbers = new ArrayList();
+        for(int count=1; count < MAX_SIZE;count++){
+            for(int i=1; i < count;i++){
+                if(count > 1 && count % i == 0){
+                    flag++;
+                }
+            }
+            if(flag == 0){
+                primeNumbers.add(count);
+            }
+
+        }
+        Object[] intArray = new Object[primeNumbers.size()];
+        return primeNumbers.toArray(intArray);
     }
 }

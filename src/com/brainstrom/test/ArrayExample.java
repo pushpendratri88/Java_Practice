@@ -31,7 +31,7 @@ public class ArrayExample{
             Arrays.sort(stringChar);
             for (int j= i+1; j < inputArray.length; j++){
                 int charPosition = 0;
-                char[] stringChar1 = inputArray[i].toCharArray();
+                char[] stringChar1 = inputArray[j].toCharArray();
                 Arrays.sort(stringChar1);
                     while(stringChar[charPosition] == stringChar1[charPosition]){
                         if(charPosition < stringChar.length-1){
