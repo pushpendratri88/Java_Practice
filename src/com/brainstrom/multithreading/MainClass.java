@@ -5,8 +5,8 @@ public class MainClass {
         MyThread myThread =  new MyThread();
         myThread.start();
        for(int i = 0; i< 10;i++) {
-           System.out.println("Hello");
            myThread.join();
+           System.out.println("Hello");
            try {
                Thread.sleep(500);
            } catch (InterruptedException e) {
