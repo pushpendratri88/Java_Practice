@@ -9,11 +9,35 @@
 //Input: "pwwkew"
 //Output: "wke"
 
-
 package com.brainstrom.interview;
+import java.util.Arrays;
 
 public class EdelmanFinancialEnginesII {
     public static void main(String[] args) {
+        String input = "bbbbb";
+        System.out.println(longestSubString(input));
+    }
 
+    private static String longestSubString(String input) {
+        String[] longestStringArray = new String[20];
+        int longestStringArrayCount = 0;
+        String subString = "";
+        String longestSubString ="";
+        char[] charArray = input.toCharArray();
+        for(char ch : charArray){
+            if(!subString.contains(""+ch)){
+                subString = subString + ch;
+            }else{
+                longestStringArray[longestStringArrayCount++] = subString;
+                subString = ""+ch;
+            }
+        }
+        longestStringArray = Arrays.copyOf(longestStringArray,longestStringArrayCount);
+        for (int i=0;i<longestStringArray.length;i++){
+            if(longestSubString.length() < longestStringArray[i].length()){
+                longestSubString = longestStringArray[i];
+            }
+        }
+        return longestSubString;
     }
 }
