@@ -34,6 +34,6 @@ public class FindCommonCharFromString {
                 }
             }
         }
-        return charString;
+        return Arrays.copyOf(charString,store);
     }
 }

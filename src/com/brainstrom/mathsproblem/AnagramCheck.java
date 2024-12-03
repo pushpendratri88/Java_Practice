@@ -2,6 +2,7 @@ package com.brainstrom.mathsproblem;
 
 import java.util.Arrays;
 
+
 public class AnagramCheck {
     public static void main(String[] args) {
         char[] charArray1 = new char[] { 't', 'e', 's', 't'};
