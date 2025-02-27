@@ -4,6 +4,8 @@
 package com.brainstrom.datastructure.array;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
@@ -14,17 +16,17 @@ public class TwoSum {
     }
 
     private static int[] twoSum(int[] intArray, int target) {
-        int[] resultArray = new int[intArray.length];
-        int resultCount = 0;
-        for (int i = 0; i < intArray.length;i++){
-            for(int j = i+1; j < intArray.length;j++){
-                if(target == intArray[i]+intArray[j]){
-                    resultArray[resultCount++] =i;
-                    resultArray[resultCount++] =j;
-                }
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i = 0; i < intArray.length; i++){
+            int complement = target - intArray[i];
+
+            if(map.containsKey(complement)){
+                return new int[]{map.get(complement) ,i};
             }
+
+            map.put(intArray[i],i);
         }
-        return Arrays.copyOf(resultArray,resultCount);
+        return new int[]{};
     }
 
 }
